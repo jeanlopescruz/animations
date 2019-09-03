@@ -1,0 +1,35 @@
+.pika {
+  background: #C42661 !important;
+  padding: 20px;
+  animation: square-to-circle 2s .5s 1 cubic-bezier(1,.015,.295,1.225) alternate;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  color: white;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.pika:hover{
+  border: 2px solid #C42661;
+  background-color: transparent !important;
+  color: #C42661;
+}
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:28px 0 0 0;
+  }
+  50%  {
+    border-radius:28px 28px 0 0;
+  }
+  75%  { 
+    border-radius:28px 28px 28px 0;
+  }
+  100% {  
+    border-radius:28px;
+  }
+}
